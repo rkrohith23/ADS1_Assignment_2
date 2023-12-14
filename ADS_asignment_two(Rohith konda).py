@@ -1,10 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Wed Dec 13 11:54:12 2023
-
-@author: rkkro
-"""
-
 import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -13,7 +6,7 @@ from scipy.stats import skew
 from scipy.stats import kurtosis
 
 
-def read_world_bank_data(filePath):
+def world_bank_data(filePath):
     """
     Alter the columns labeled "Country Name" and "Time" after reading
     World Bank data from a CSV file.
@@ -238,7 +231,7 @@ def pieChart(data):
 
 
 
-country_data , year_data = read_world_bank_data("world_bank_dataset.csv")
+country_data , year_data = world_bank_data("world_bank_dataset.csv")
 print("             -------------- COUNTRY DATA ------------------             ")
 print(country_data.head())
 print("             ------------------ YEAR DATA  ------------------              ")
